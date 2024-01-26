@@ -2,24 +2,35 @@ version: 2
 
 sources:
   - name: snowflake_account_usage
-    database: snowflake
-    schema: account_usage
+    database: SNOWFLAKE
+    schema: ACCOUNT_USAGE
     tables:
       - name: access_history
+        identifier: ACCESS_HISTORY
       - name: database_storage_usage_history
+        identifier: DATABASE_STORAGE_USAGE_HISTORY
       - name: metering_daily_history
+        identifier: METERING_DAILY_HISTORY
       - name: metering_history
+        identifier: METERING_HISTORY
       - name: query_history
+        identifier: QUERY_HISTORY
       - name: serverless_task_history
+        identifier: SERVERLESS_TASK_HISTORY
       - name: stage_storage_usage_history
+        identifier: STAGE_STORAGE_USAGE_HISTORY
       - name: warehouse_events_history
+        identifier: WAREHOUSE_EVENTS_HISTORY
       - name: warehouse_metering_history
+        identifier: WAREHOUSE_METERING_HISTORY
 
   - name: snowflake_organization_usage
-    database: snowflake
-    schema: organization_usage
+    database: SNOWFLAKE
+    schema: ORGANIZATION_USAGE
     tables:
       - name: rate_sheet_daily
+        identifier: RATE_SHEET_DAILY
       - name: remaining_balance_daily
+        identifier: REMAINING_BALANCE_DAILY
       - name: usage_in_currency_daily
-
+        identifier: USAGE_IN_CURRENCY_DAILY
